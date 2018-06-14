@@ -24,7 +24,3 @@ let countFactory = (function() {
     };
   };
 }());
-
-export default {
-  countFactory
-};

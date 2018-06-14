@@ -11,6 +11,3 @@ function outer() {
     }
   };
 }
-
-const counter = outer();
-const counter2 = outer();
