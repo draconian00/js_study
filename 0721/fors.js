@@ -60,5 +60,4 @@ for (let n in numArr) {
 
 /**
  * for-of
- * test
  */
