@@ -1,0 +1,16 @@
+<script src="./seed.js"></script>
+
+<script>
+  var plainText = "하하하$호호%숫2자$특^수@문6자$#~~Meta~~Stream~/~";
+  var key = "1234567812345678";
+  var encrypted = CryptoJS.SEED.encrypt(plainText, key, { iv: key, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }).toString();
+  var decrypted = CryptoJS.SEED.decrypt(encrypted, key, { iv: key, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8);
+  document.writeln(' - 테스트</br>');
+  document.writeln(plainText);
+  document.writeln('</br>');
+  document.writeln(encrypted);
+  document.writeln('</br>');
+  document.writeln(decrypted);
+  document.writeln('</br></br>');
+</script>
+
